@@ -8,7 +8,7 @@ const Item = ({item, onDeleteItem, onToggleItem}) => {
       onChange={() => onToggleItem(item.id)}
       />
       <span style={item.packed ? {textDecoration: "line-through"} : {}}>
-      {item.quantity} {item.description}
+      {item.quality} {item.description}
       </span>
       <button onClick = {() => onDeleteItem(item.id)} >❌</button>
 
